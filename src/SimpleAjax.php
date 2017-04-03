@@ -38,7 +38,7 @@ class SimpleAjax extends Controller
 	public function run ()
 	{
 		// check if a hook is registered
-		if (is_array ($GLOBALS['TL_HOOKS']['simpleAjax']) && count ($GLOBALS['TL_HOOKS']['simpleAjax']) > 0)
+		if (is_array ($GLOBALS['TL_HOOKS']['simpleAjax']) === true)
 		{
 			// execute every registered callback
 			foreach ($GLOBALS['TL_HOOKS']['simpleAjax'] as $callback)

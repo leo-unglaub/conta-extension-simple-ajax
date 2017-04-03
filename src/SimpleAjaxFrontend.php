@@ -42,7 +42,7 @@ class SimpleAjaxFrontend extends Frontend
 	public function run ()
 	{
 		// run the global hook
-		if (is_array ($GLOBALS['TL_HOOKS']['simpleAjax']) && count ($GLOBALS['TL_HOOKS']['simpleAjax']) > 0)
+		if (is_array ($GLOBALS['TL_HOOKS']['simpleAjax']) === true)
 		{
 			// execute every registered callback
 			foreach ($GLOBALS['TL_HOOKS']['simpleAjax'] as $callback)
@@ -53,7 +53,7 @@ class SimpleAjaxFrontend extends Frontend
 		}
 
 		// run the frontend exclusive hook
-		if (is_array ($GLOBALS['TL_HOOKS']['simpleAjaxFrontend']) && count ($GLOBALS['TL_HOOKS']['simpleAjaxFrontend']) > 0)
+		if (is_array ($GLOBALS['TL_HOOKS']['simpleAjaxFrontend']) === true)
 		{
 			// execute every registered callback
 			foreach ($GLOBALS['TL_HOOKS']['simpleAjaxFrontend'] as $callback)
