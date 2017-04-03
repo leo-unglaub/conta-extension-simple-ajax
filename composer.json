@@ -4,8 +4,7 @@
 	"keywords": [
 		"contao",
 		"ajax",
-		"framework",
-		"helper"
+		"framework"
 	],
 	"type": "contao-module",
 	"license": "LGPL-3.0+",
