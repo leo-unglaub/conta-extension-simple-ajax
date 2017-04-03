@@ -71,5 +71,5 @@ class SimpleAjaxFrontend extends Frontend
 
 
 // create a SimpleAjax instance and run it
-$objSimpleAjaxFrontend = new SimpleAjaxFrontend();
-$objSimpleAjaxFrontend->run();
+$objSimpleAjaxFrontend = new SimpleAjaxFrontend ();
+$objSimpleAjaxFrontend->run ();
