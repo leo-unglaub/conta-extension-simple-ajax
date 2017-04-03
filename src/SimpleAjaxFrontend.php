@@ -48,7 +48,7 @@ class SimpleAjaxFrontend extends Frontend
 			foreach ($GLOBALS['TL_HOOKS']['simpleAjax'] as $callback)
 			{
 				$this->import ($callback[0]);
-				$this->$callback[0]->$callback[1] ();
+				$this->{$callback[0]}->{$callback[1]} ();
 			}
 		}
 
@@ -59,7 +59,7 @@ class SimpleAjaxFrontend extends Frontend
 			foreach ($GLOBALS['TL_HOOKS']['simpleAjaxFrontend'] as $callback)
 			{
 				$this->import ($callback[0]);
-				$this->$callback[0]->$callback[1] ();
+				$this->{$callback[0]}->{$callback[1]} ();
 			}
 		}
 

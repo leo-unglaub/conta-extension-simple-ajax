@@ -44,7 +44,7 @@ class SimpleAjax extends Controller
 			foreach ($GLOBALS['TL_HOOKS']['simpleAjax'] as $callback)
 			{
 				$this->import ($callback[0]);
-				$this->$callback[0]->$callback[1] ();
+				$this->{$callback[0]}->{$callback[1]} ();
 			}
 		}
 
