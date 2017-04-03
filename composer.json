@@ -1,0 +1,43 @@
+{
+	"name": "leo-unglaub/contao-simple-ajax",
+	"description": "Get more control over your AJAX requests. Simply use the entire Contao Framework in your AJAX calls.",
+	"keywords": [
+		"contao",
+		"ajax",
+		"framework",
+		"helper"
+	],
+	"type": "contao-module",
+	"license": "LGPL-3.0+",
+	"authors": [
+		{
+			"name": "Leo Unglaub",
+			"email": "leo@unglaub.at",
+			"homepage": "https://leo.unglaub.at",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://bitbucket.org/leo-unglaub/contao-simple-ajax/issues",
+		"source": "https://bitbucket.org/leo-unglaub/contao-simple-ajax/src/",
+		"email": "leo@leo-unglaub.net",
+		"irc": "irc://irc.freenode.org/contao.dev"
+	},
+	"require": {
+		"php": "^5.6 || ^7.0",
+		"contao/core": "~3",
+		"contao-community-alliance/composer-installer": "*"
+	},
+	"replace": {
+		"contao-legacy/simple-ajax": "*",
+		"leounglaub/contao-simple-ajax": "*"
+	},
+	"extra": {
+		"contao": {
+			"sources": {
+				"src/SimpleAjax.php": "SimpleAjax.php",
+				"src/SimpleAjaxFrontend.php": "SimpleAjaxFrontend.php"
+			}
+		}
+	}
+}
